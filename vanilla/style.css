@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to top right, rgb(255, 0, 0), rgb(81, 0, 255));
+  background-repeat: none;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.daily-planner {
+  display: flex;
+}
+
+.planner-inner {
+  margin: 0 50px;
+}
+
+.planner-inner div {
+  display: flex;
+  margin: 17px 0;
+  height: 45px;
+  align-items: center;
+  width: 450px;
+  justify-content: space-between;
+}
+
+input {
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 5px;
+  border: none;
+  width: 60%;
+  color: rgb(63, 214, 8);
+  font-weight: 600;
+  font-size: 22px;
+  padding: 0 10px;
+  overflow: scroll;
+}
+
+input:focus {
+  outline: 5px solid rgb(63, 214, 8);
+}
+
+p {
+  font-size: 20px;
+  color: rgb(36, 36, 36);
+  width: 32%;
+  border: none;
+  height: 100%;
+  background:  rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filled {
+  background: rgba(0, 0, 0, .6);
+  cursor: pointer;
+}
+
+.filled:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 1900px) {
+
+  .planner-inner div {
+    margin: 40px 0;
+    transform: scale(1.2);
+  }
+
+  .planner-inner {
+    margin: 0 80px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  body {
+    overflow: scroll;
+    align-items: flex-start;
+    padding: 50px 0;
+    height: 160vh;
+  }
+
+  .daily-planner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+

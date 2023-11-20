@@ -1,0 +1,68 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: .3s;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top right, yellow, rgb(7, 247, 7))
+}
+
+.App-inner {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.3%;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.task, .task-filled {
+  width: 60%;
+  height: 80%;
+  background: rgba(0,0,0,.3);
+  border-radius: 5px;
+  border: none;
+  padding: 0 10px;
+}
+
+.task-filled {
+  background: rgba(0,0,0,.7);
+  color: rgb(220, 220, 220);
+}
+
+.task:focus {
+  border: 2px solid rgba(0,0,0,.6);
+  outline: none;
+}
+
+.time {
+  width: 30%;
+  overflow: hidden;
+  font-size: 10px;
+  height: 80%;
+  background: rgba(0,0,0,.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
